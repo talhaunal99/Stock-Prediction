@@ -7,4 +7,6 @@
 >>> pip install wordcloud
 >>> pip install snscrape
 >>> pip install tweet-preprocessor
+>>>pip install requests-html
+
 
