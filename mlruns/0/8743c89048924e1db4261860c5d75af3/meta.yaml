@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/0/8743c89048924e1db4261860c5d75af3/artifacts
+end_time: 1671327190018
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 8743c89048924e1db4261860c5d75af3
+run_name: bustling-bee-70
+run_uuid: 8743c89048924e1db4261860c5d75af3
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1671327072292
+status: 4
+tags: []
+user_id: talhaunal

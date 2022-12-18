@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/0/4966e3cff88e4756936b85eec74255fd/artifacts
+end_time: 1671318577111
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 4966e3cff88e4756936b85eec74255fd
+run_name: learned-duck-338
+run_uuid: 4966e3cff88e4756936b85eec74255fd
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1671318577071
+status: 4
+tags: []
+user_id: talhaunal

@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/0/e7e415917aef4459886b152cc14673ae/artifacts
+end_time: 1671327707750
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: e7e415917aef4459886b152cc14673ae
+run_name: resilient-jay-551
+run_uuid: e7e415917aef4459886b152cc14673ae
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1671327707740
+status: 4
+tags: []
+user_id: talhaunal
