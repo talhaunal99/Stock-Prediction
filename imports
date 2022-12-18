@@ -5,4 +5,6 @@
 >>> pip install finta
 >>> pip install keras-tcn
 >>> pip install wordcloud
+>>> pip install snscrape
+>>> pip install tweet-preprocessor
 
