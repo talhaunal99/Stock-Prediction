@@ -532,7 +532,6 @@ def get_today_info(company):
         plt.show()
 
     return today_data
-get_today_info("GOOG")
 
 
 # In[149]:
@@ -555,28 +554,12 @@ def risk_prediction_all(company, start_time, end_time):
     pred = [updown(pred_list['tcn']), updown(pred_list['lstm']), updown(pred_list['dt']), updown(pred_list['lr']),
             updown(pred_list['svm']), updown(pred_list['nb']), updown(pred_list['knn'])]
     df = pd.DataFrame(data={'Model': model, 'Accuracy': acc, 'Up/Down prediction': pred})
-    print(df)
+    df.to_pickle(("./gathered{}.pkl").format(company))
+
+    return df
 
     #df.to_csv('data/updown-prediction-{}.csv'.format(company), index=False)
-risk_prediction_all("GOOG","2018-01-01","2022-05-07")
 
-
-# In[152]:
-
-
-risk_prediction_all("AAPL","2018-01-01","2022-05-07")
-
-
-# In[153]:
-
-
-risk_prediction_all("AMZN","2018-01-01","2022-05-07")
-
-
-# In[155]:
-
-
-risk_prediction_all("MSFT","2018-01-01","2022-05-07")
 
 
 # In[ ]:
@@ -621,7 +604,6 @@ def just_sentiment_data(company, start_time, end_time):
     d1=d.drop(['date'],axis=1)
     return d1,label   
 
-just_sentiment_data("GOOG","2018-01-01","2022-05-07")  
 
 
 # In[226]:
@@ -659,7 +641,6 @@ def get_today_info_just_sentiment(company):
 
         return([pos,neg])
     
-get_today_info_just_sentiment("GOOG")
 
 
 # In[230]:
@@ -684,27 +665,9 @@ def risk_prediction_just_sentiment(company, start_time, end_time):
     pred = [updown(pred_list['tcn']), updown(pred_list['lstm']), updown(pred_list['dt']), updown(pred_list['lr']),
             updown(pred_list['svm']), updown(pred_list['nb']), updown(pred_list['knn'])]
     df = pd.DataFrame(data={'Model': model, 'Accuracy': acc, 'Up/Down prediction': pred})
-    print(df)
+    df.to_pickle(("./just_sentiment{}.pkl").format(company))
 
-risk_prediction_just_sentiment("GOOG","2018-01-01","2022-05-07")
-
-
-# In[231]:
-
-
-risk_prediction_just_sentiment("AAPL","2018-01-01","2022-05-07")
-
-
-# In[232]:
-
-
-risk_prediction_just_sentiment("AMZN","2018-01-01","2022-05-07")
-
-
-# In[233]:
-
-
-risk_prediction_just_sentiment("MSFT","2018-01-01","2022-05-07")
+    return df
 
 
 # In[ ]:
@@ -759,9 +722,7 @@ def get_today_info_just_stock(company):
     stock_data = scaler.transform(stock_data)
     today_data = scaler.transform([today_data])[0]
 
-    print(today_data.shape)
     return today_data
-get_today_info_just_stock("GOOG")
 
 
 # In[162]:
@@ -819,10 +780,8 @@ def just_stock_data(company, start_time, end_time):
     scaler.fit(stock_data)
 
     stock_data = scaler.transform(stock_data)
-    print(stock_data.shape)
-    return stock_data, label    
+    return stock_data, label
 
-just_stock_data("GOOG","2018-01-01","2022-05-07")  
 
 
 # In[172]:
@@ -847,32 +806,59 @@ def risk_prediction_just_stock(company, start_time, end_time):
     pred = [updown(pred_list['tcn']), updown(pred_list['lstm']), updown(pred_list['dt']), updown(pred_list['lr']),
             updown(pred_list['svm']), updown(pred_list['nb']), updown(pred_list['knn'])]
     df = pd.DataFrame(data={'Model': model, 'Accuracy': acc, 'Up/Down prediction': pred})
-    print(df)
+    df.to_pickle(("./just_stock{}.pkl").format(company))
+    return df
 
-    #df.to_csv('data/updown-prediction-{}.csv'.format(company), index=False)
-risk_prediction_just_stock("GOOG","2018-01-01","2022-05-07")
-
-
-# In[174]:
-
-
-risk_prediction_just_stock("AAPL","2018-01-01","2022-05-07")
-
-
-# In[176]:
-
-
-risk_prediction_just_stock("AMZN","2018-01-01","2022-05-07")
-
-
-# In[175]:
-
-
-risk_prediction_just_stock("MSFT","2018-01-01","2022-05-07")
 
 
 # In[248]:
 
 
+risk_prediction_just_sentiment("GOOG","2018-01-01","2022-05-07")
 
+
+# In[231]:
+
+
+risk_prediction_just_sentiment("AAPL","2018-01-01","2022-05-07")
+
+
+# In[232]:
+
+
+risk_prediction_all("GOOG","2018-01-01","2022-05-07")
+
+
+# In[152]:
+
+
+risk_prediction_all("AAPL","2018-01-01","2022-05-07")
+
+
+# In[153]:
+
+
+risk_prediction_all("AMZN","2018-01-01","2022-05-07")
+
+
+# In[155]:
+
+
+risk_prediction_all("MSFT","2018-01-01","2022-05-07")
+
+risk_prediction_just_sentiment("AMZN","2018-01-01","2022-05-07")
+
+
+# In[233]:
+
+
+risk_prediction_just_sentiment("MSFT","2018-01-01","2022-05-07")
+
+risk_prediction_just_stock("GOOG", "2018-01-01", "2022-05-07")
+
+risk_prediction_just_stock("MSFT", "2018-01-01", "2022-05-07")
+
+risk_prediction_just_stock("AMZN", "2018-01-01", "2022-05-07")
+
+risk_prediction_just_stock("AAPL", "2018-01-01", "2022-05-07")
 
