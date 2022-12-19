@@ -1,77 +1,58 @@
 
 import streamlit as st
-import matplotlib.pyplot as plt
-import numpy as np
+import pandas as pd
 
-import risk_prediction as rp
 
 
 if st.button('Google get stock accuracies'):
-    df=rp.risk_prediction_just_stock("GOOG", "2018-01-01", "2022-05-07")
+    df = pd.read_pickle("./just_stockGOOG.pkl")
     st.dataframe(df, 200, 100)
 
 if st.button('Microsoft get stock accuracies'):
-    df=rp.risk_prediction_just_stock("MSFT", "2018-01-01", "2022-05-07")
+    df = pd.read_pickle("./just_stockMSFT.pkl")
     st.dataframe(df, 200, 100)
 
 if st.button('Amazon get stock accuracies'):
-    df=rp.risk_prediction_just_stock("AMZN", "2018-01-01", "2022-05-07")
+    df = pd.read_pickle("./just_stockAMZN.pkl")
     st.dataframe(df, 200, 100)
 
 if st.button('Apple get stock accuracies'):
-    df=rp.risk_prediction_just_stock("AAPL", "2018-01-01", "2022-05-07")
+    df = pd.read_pickle("./just_stockAAPL.pkl")
     st.dataframe(df, 200, 100)
 
 
 
 if st.button('Google get sentiment accuracies'):
-    df=rp.risk_prediction_just_sentiment("GOOG", "2018-01-01", "2022-05-07")
+    df = pd.read_pickle("./just_sentimentGOOG.pkl")
     st.dataframe(df, 200, 100)
 
 if st.button('Microsoft get sentiment accuracies'):
-    df=rp.risk_prediction_just_sentiment("MSFT", "2018-01-01", "2022-05-07")
+    df = pd.read_pickle("./just_sentimentMSFT.pkl")
     st.dataframe(df, 200, 100)
 
 if st.button('Amazon get sentiment accuracies'):
-    df=rp.risk_prediction_just_sentiment("AMZN", "2018-01-01", "2022-05-07")
+    df = pd.read_pickle("./just_sentimentAMZN.pkl")
     st.dataframe(df, 200, 100)
 
 if st.button('Apple get sentiment accuracies'):
-    df=rp.risk_prediction_just_sentiment("AAPL", "2018-01-01", "2022-05-07")
+    df = pd.read_pickle("./just_sentimentAAPL.pkl")
     st.dataframe(df, 200, 100)
 
 
 
-if st.button('Google get sentiment accuracies'):
-    df=rp.risk_prediction_just_sentiment("GOOG", "2018-01-01", "2022-05-07")
+if st.button('Google get combined accuracies'):
+    df = pd.read_pickle("./gatheredGOOG.pkl")
     st.dataframe(df, 200, 100)
 
-if st.button('Microsoft get sentiment accuracies'):
-    df=rp.risk_prediction_just_sentiment("MSFT", "2018-01-01", "2022-05-07")
+if st.button('Microsoft get combined accuracies'):
+    df = pd.read_pickle("./gatheredMSFT.pkl")
     st.dataframe(df, 200, 100)
 
-if st.button('Amazon get sentiment accuracies'):
-    df=rp.risk_prediction_just_sentiment("AMZN", "2018-01-01", "2022-05-07")
+if st.button('Amazon get combined accuracies'):
+    df = pd.read_pickle("./gatheredAMZN.pkl")
     st.dataframe(df, 200, 100)
 
-if st.button('Apple get sentiment accuracies'):
-    df=rp.risk_prediction_just_sentiment("AAPL", "2018-01-01", "2022-05-07")
+if st.button('Apple get combined accuracies'):
+    df = pd.read_pickle("./gatheredAAPL.pkl")
     st.dataframe(df, 200, 100)
 
-
-
-if st.button('Google get sentiment accuracies'):
-    df=rp.risk_prediction_just_sentiment("GOOG", "2018-01-01", "2022-05-07")
-    st.dataframe(df, 200, 100)
-
-if st.button('Microsoft get all accuracies'):
-    df=rp.risk_prediction_all("MSFT", "2018-01-01", "2022-05-07")
-    st.dataframe(df, 200, 100)
-
-if st.button('Amazon get all accuracies'):
-    df=rp.risk_prediction_just_sentiment("AMZN", "2018-01-01", "2022-05-07")
-    st.dataframe(df, 200, 100)
-
-if st.button('Apple get all accuracies'):
-    df=rp.risk_prediction_just_all("AAPL", "2018-01-01", "2022-05-07")
-    st.dataframe(df, 200, 100)
