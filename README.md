@@ -2,16 +2,16 @@
 
 ## Requirements
 Note: requirements.txt cause a problem when deployment, so we deleted it temporarily. Instead of requirments.txt,used libraries listed below. 
-import nltk
-nltk.download()
-pip install yfinance --upgrade --no-cache-dir
-pip install tensorflow
-pip install finta
-pip install keras-tcn
-pip install wordcloud
-pip install snscrape
-pip install tweet-preprocessor
-pip install requests-html
+- import nltk
+- nltk.download()
+- pip install yfinance --upgrade --no-cache-dir
+- pip install tensorflow
+- pip install finta
+- pip install keras-tcn
+- pip install wordcloud
+- pip install snscrape
+- pip install tweet-preprocessor
+- pip install requests-html
 
 ## Deployment with Streamlit
 Serving in : https://talhaunal99-stock-prediction-app-9gte11.streamlit.app/
