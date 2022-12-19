@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/0/37ddb76babcb4ea3abe1f676cc018351/artifacts
+end_time: 1670251997511
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 37ddb76babcb4ea3abe1f676cc018351
+run_name: dashing-calf-703
+run_uuid: 37ddb76babcb4ea3abe1f676cc018351
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1670251880824
+status: 4
+tags: []
+user_id: talhaunal

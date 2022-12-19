@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/0/15de0e24dc9b40d585a0c9b13380852e/artifacts
+end_time: 1671323212564
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 15de0e24dc9b40d585a0c9b13380852e
+run_name: skittish-stoat-711
+run_uuid: 15de0e24dc9b40d585a0c9b13380852e
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1671323099247
+status: 4
+tags: []
+user_id: talhaunal

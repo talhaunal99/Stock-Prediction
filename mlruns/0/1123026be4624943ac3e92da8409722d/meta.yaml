@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/0/1123026be4624943ac3e92da8409722d/artifacts
+end_time: 1671343462183
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 1123026be4624943ac3e92da8409722d
+run_name: puzzled-mule-127
+run_uuid: 1123026be4624943ac3e92da8409722d
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1671343288409
+status: 4
+tags: []
+user_id: talhaunal

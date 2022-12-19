@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/0/28eeadcf9e864ca79820d8e57e015381/artifacts
+end_time: 1671323015120
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 28eeadcf9e864ca79820d8e57e015381
+run_name: languid-foal-565
+run_uuid: 28eeadcf9e864ca79820d8e57e015381
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1671323015114
+status: 4
+tags: []
+user_id: talhaunal

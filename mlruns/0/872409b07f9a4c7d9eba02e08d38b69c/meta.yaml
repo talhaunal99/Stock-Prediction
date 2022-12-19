@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/0/872409b07f9a4c7d9eba02e08d38b69c/artifacts
+end_time: 1671326705090
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 872409b07f9a4c7d9eba02e08d38b69c
+run_name: skillful-foal-475
+run_uuid: 872409b07f9a4c7d9eba02e08d38b69c
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1671326583636
+status: 4
+tags: []
+user_id: talhaunal

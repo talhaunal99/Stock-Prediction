@@ -1,0 +1,15 @@
+artifact_uri: mlflow-artifacts:/0/b361b5efbd2946ff850211cc70082100/artifacts
+end_time: 1670357639689
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: b361b5efbd2946ff850211cc70082100
+run_name: gregarious-hawk-514
+run_uuid: b361b5efbd2946ff850211cc70082100
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1670357520767
+status: 4
+tags: []
+user_id: talhaunal
