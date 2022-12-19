@@ -1,3 +1,12 @@
 >>> import nltk
 >>> nltk.download()
+>>> pip install yfinance --upgrade --no-cache-dir
 >>> pip install tensorflow
+>>> pip install finta
+>>> pip install keras-tcn
+>>> pip install wordcloud
+>>> pip install snscrape
+>>> pip install tweet-preprocessor
+>>>pip install requests-html
+
+
